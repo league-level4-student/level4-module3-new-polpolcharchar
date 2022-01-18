@@ -31,6 +31,27 @@ public class LinkedListDemo {
          * String nodes.
          * 
          */
+    	
+    	LinkedList<Integer> lList = new LinkedList<Integer>();
+    	for(int i = 0; i < 10; i+=2) {
+    		lList.add(i);
+    	}
+    	lList.print();
+//    	
+//    	for(int i = 0; i < 2; i++) {
+//    		lList.remove(i);
+//    	}
+//    	
+//    	lList.print();
+
+    	String s = "ab.?nn";
+    	s = s.replaceAll("[ab.?]", "z");
+    	System.out.println(s);
+    	Node head = lList.getHead();
+    	while(head != null) {
+        	System.out.println((int)head.getValue() * 2);
+        	head = head.getNext();
+    	}
 
     }
 
