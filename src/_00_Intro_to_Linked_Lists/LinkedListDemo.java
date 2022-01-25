@@ -37,21 +37,19 @@ public class LinkedListDemo {
     		lList.add(i);
     	}
     	lList.print();
-//    	
-//    	for(int i = 0; i < 2; i++) {
-//    		lList.remove(i);
-//    	}
-//    	
-//    	lList.print();
-
-    	String s = "ab.?nn";
-    	s = s.replaceAll("[ab.?]", "z");
-    	System.out.println(s);
-    	Node head = lList.getHead();
-    	while(head != null) {
-        	System.out.println((int)head.getValue() * 2);
-        	head = head.getNext();
+    	
+    	for(int i = 0; i < 2; i++) {
+    		lList.remove(i);
     	}
+    	
+    	lList.print();
+
+    	
+//    	Node head = lList.getHead();
+//    	while(head != null) {
+//        	System.out.println((int)head.getValue() * 2);
+//        	head = head.getNext();
+//    	}
 
     }
 

@@ -1,5 +1,7 @@
 package _03_Intro_to_Binary_Trees;
 
+import java.util.Random;
+
 public class BinaryTreeDemo {
 
     /*
@@ -33,7 +35,47 @@ public class BinaryTreeDemo {
      */
 
     public static void main(String[] args) {
-
+    	Random r = new Random();
+    	BinaryTree<Integer> t = new BinaryTree<Integer>();
+    	for(int i = 0; i < 20; i++) {
+    		t.insert(r.nextInt(20));
+    	}
+    	System.out.println("Horizontal:");
+    	t.printHorizontal();
+    	System.out.println("Vertical");
+    	t.printVertical();
+    	
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
