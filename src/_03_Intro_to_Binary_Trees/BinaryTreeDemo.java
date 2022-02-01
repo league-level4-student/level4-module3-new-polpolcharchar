@@ -37,13 +37,22 @@ public class BinaryTreeDemo {
     public static void main(String[] args) {
     	Random r = new Random();
     	BinaryTree<Integer> t = new BinaryTree<Integer>();
-    	for(int i = 0; i < 20; i++) {
-    		t.insert(r.nextInt(20));
+    	for(int i = 0; i < 6; i++) {
+    		t.insert(r.nextInt(10));
     	}
     	System.out.println("Horizontal:");
     	t.printHorizontal();
     	System.out.println("Vertical");
     	t.printVertical();
+    	
+    	
+    	if(t.search(5) != null) {
+    		t.delete(5);
+    	}
+    	
+    	System.out.println("Vertical");
+    	t.printVertical();
+    	
     	
     }
 
